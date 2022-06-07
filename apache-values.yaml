@@ -34,7 +34,7 @@ image:
   debug: false
 env:
             - name: ClusterName
-              value: {{ .Values.ClusterName }}
+              value: {{ .currentStage.test }}
 ## Extra objects to deploy (value evaluated as a template)
 ##
 extraDeploy: []
