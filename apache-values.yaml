@@ -32,9 +32,6 @@ image:
   ## Set to true if you would like to see extra information on logs
   ##
   debug: false
-  env:
-  - name: ClusterName
-    value: {{ .currentStage.test }}
 ## Extra objects to deploy (value evaluated as a template)
 ##
 extraDeploy: []
@@ -328,7 +325,9 @@ extraVolumeMounts: []
 
 ## An array to add extra env vars
 ##
-extraEnvVars: []
+extraEnvVars: 
+   - name: ClusterName
+     value: {{ .currentStage.test }}
 
 ## Add init containers to the Apache pods.
 ## Example:
