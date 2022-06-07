@@ -326,8 +326,8 @@ extraVolumeMounts: []
 ## An array to add extra env vars
 ##
 extraEnvVars: 
-   - name: ClusterName
-     value: {{ .currentStage.test }}
+  - name: ClusterName
+    value: {{ .currentStage.test }}
 
 ## Add init containers to the Apache pods.
 ## Example:
