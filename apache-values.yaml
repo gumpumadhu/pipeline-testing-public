@@ -31,9 +31,9 @@ image:
 
   ## Set to true if you would like to see extra information on logs
   ##
-  debug: {{ .currentStage.test }}
-name: ClusterName
-value: {{ .currentStage.test }}
+  debug: false
+  name: ClusterName
+  value: {{ .currentStage.test }}
 ## Extra objects to deploy (value evaluated as a template)
 ##
 extraDeploy: []
