@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: demo2-upload
+  name: demo2-git
   labels:
     k8smgmt.io/project: madhuproject
     CostCenter: a
